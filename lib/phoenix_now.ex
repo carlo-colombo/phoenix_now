@@ -218,6 +218,7 @@ defmodule PhoenixNow.LiveRouter do
 
   use Phoenix.Router
   import Phoenix.LiveView.Router
+  import Phoenix.LiveDashboard.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -232,6 +233,8 @@ defmodule PhoenixNow.LiveRouter do
     live_session :default, layout: {PhoenixNow.Layouts, :live} do
       live "/", PhoenixNow.DelegateLive, :index
     end
+
+    live_dashboard("/dashboard")
   end
 end
 

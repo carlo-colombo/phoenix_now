@@ -24,6 +24,7 @@ defmodule PhoenixNow.MixProject do
       {:phoenix_live_view, "~> 0.20"},
       {:bandit, "~> 1.0", override: true},
       {:floki, "~> 0.35"},
+      {:phoenix_live_dashboard, "~> 0.8.3"},
 
       # for some reason this needs to be runtime false
       {:phoenix_live_reload, "~> 1.4.0", runtime: false, override: true},
